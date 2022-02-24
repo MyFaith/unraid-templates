@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support/>
   <Project>https://github.com/Dusk-Labs/dim</Project>
-  <Overview>Dim, a media manager fueled by dark forces.</Overview>
+  <Overview>Dim is a self-hosted media manager. With minimal setup, Dim will organize and beautify your media collections, letting you access and play them anytime from anywhere</Overview>
   <Category>MediaApp:Video</Category>
   <WebUI>http://[IP]:[PORT:8000]</WebUI>
   <TemplateURL/>
