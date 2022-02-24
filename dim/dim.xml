@@ -20,7 +20,7 @@
   <DateInstalled>1644831555</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description>Dim, a media manager fueled by dark forces.</Description>
+  <Description>Dim is a self-hosted media manager. With minimal setup, Dim will organize and beautify your media collections, letting you access and play them anytime from anywhere</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
