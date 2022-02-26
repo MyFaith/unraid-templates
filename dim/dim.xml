@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>dim</Name>
+  <Name>Dim</Name>
   <Repository>ghcr.io/dusk-labs/dim:dev</Repository>
   <Registry>https://github.com/Dusk-Labs/dim/pkgs/container/dim</Registry>
   <Network>bridge</Network>
