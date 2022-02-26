@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>rsshub</Name>
+  <Name>RSSHub</Name>
   <Repository>diygod/rsshub</Repository>
   <Registry>https://hub.docker.com/r/diygod/rsshub</Registry>
   <Network>bridge</Network>
