@@ -15,7 +15,7 @@
   <TemplateURL/>
   <Icon/>
   <ExtraParams/>
-  <PostArgs>--disable_login=0</PostArgs>
+  <PostArgs>flare --disable_login=0</PostArgs>
   <CPUset/>
   <DateInstalled>1648803831</DateInstalled>
   <DonateText/>
