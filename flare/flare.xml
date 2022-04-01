@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Flare</Name>
+  <Repository>soulteary/flare</Repository>
+  <Registry>https://hub.docker.com/r/soulteary/flare</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/soulteary/flare/issues</Support>
+  <Project>https://github.com/soulteary/flare</Project>
+  <Overview>Challenge all bookmarking apps and websites directories, Aim to Be a best performance monster.</Overview>
+  <Category>Network:Web Network:Other</Category>
+  <WebUI>http://[IP]:[PORT:5005]</WebUI>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs>--disable_login=0</PostArgs>
+  <CPUset/>
+  <DateInstalled>1648803645</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Challenge all bookmarking apps and websites directories, Aim to Be a best performance monster.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5005</HostPort>
+        <ContainerPort>5005</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/flare</HostDir>
+      <ContainerDir>/app</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Web UI" Target="5005" Default="5005" Mode="tcp" Description="Web UI" Type="Port" Display="always" Required="false" Mask="false">5005</Config>
+  <Config Name="Config" Target="/app" Default="/mnt/user/appdata/flare" Mode="rw" Description="Config" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/flare</Config>
+</Container>
