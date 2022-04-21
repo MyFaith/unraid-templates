@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Cloudreve</Name>
+  <Repository>xavierniu/cloudreve</Repository>
+  <Registry>https://hub.docker.com/r/xavierniu/cloudreve</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/cloudreve/Cloudreve/issues</Support>
+  <Project>https://github.com/cloudreve/Cloudreve</Project>
+  <Overview>Self-hosted file management and sharing system, supports multiple storage providers&#xD;
+&#xD;
+==========IMPORTANT==========&#xD;
+The default user and pass in the console log.</Overview>
+  <Category>Cloud: Network:Web</Category>
+  <WebUI>http://[IP]:[PORT:5212]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/cloudreve/frontend/master/public/static/img/logo192.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1650534971</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Self-hosted file management and sharing system, supports multiple storage providers&#xD;
+&#xD;
+==========IMPORTANT==========&#xD;
+The default user and pass in the console log.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5212</HostPort>
+        <ContainerPort>5212</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/cloudreve/uploads</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/cloudreve/db</HostDir>
+      <ContainerDir>/cloudreve/db</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/cloudreve/avatar</HostDir>
+      <ContainerDir>/cloudreve/avatar</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/cloudreve/config</HostDir>
+      <ContainerDir>/cloudreve/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>Asia/Shanghai</Value>
+      <Name>TZ</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Web UI" Target="5212" Default="" Mode="tcp" Description="Web UI" Type="Port" Display="always" Required="false" Mask="false">5212</Config>
+  <Config Name="Upload Path" Target="/cloudreve/uploads" Default="" Mode="rw" Description="Container Path: /cloudreve/uploads" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Timezone" Target="TZ" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: TZ" Type="Variable" Display="always" Required="false" Mask="false">Asia/Shanghai</Config>
+  <Config Name="Database Path" Target="/cloudreve/db" Default="" Mode="rw" Description="Container Path: /cloudreve/db" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/cloudreve/db</Config>
+  <Config Name="Avatar Path" Target="/cloudreve/avatar" Default="" Mode="rw" Description="Container Path: /cloudreve/avatar" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/cloudreve/avatar</Config>
+  <Config Name="Config Path" Target="/cloudreve/config" Default="" Mode="rw" Description="Container Path: /cloudreve/config" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/cloudreve/config</Config>
+</Container>
