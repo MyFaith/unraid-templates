@@ -52,4 +52,7 @@ Important: Initial password in the log.</Description>
   <Config Name="Web UI Port" Target="5244" Default="5244" Mode="tcp" Description="Web UI Port: 5244" Type="Port" Display="always" Required="false" Mask="false">5244</Config>
   <Config Name="Data Path" Target="/mnt/data" Default="" Mode="rw" Description="Mount at /mnt/data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/</Config>
   <Config Name="Data Path" Target="/opt/alist/data" Default="" Mode="rw" Description="Appdata Path" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/alist</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">0</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">0</Config>
+  <Config Name="UMASK" Target="UMASK" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
 </Container>
