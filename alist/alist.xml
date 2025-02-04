@@ -15,7 +15,7 @@ Important: Initial password in the log.</Overview>
   <Category>Cloud: Network:Web Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:5244]</WebUI>
   <TemplateURL/>
-  <Icon>https://pic.imgdb.cn/item/654c7a1cc458853aefb29f0f.png</Icon>
+  <Icon>https://alist.nn.ci/logo.svg</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
